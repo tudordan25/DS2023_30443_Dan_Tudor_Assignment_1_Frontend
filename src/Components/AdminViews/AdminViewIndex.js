@@ -3,7 +3,8 @@ import {Tab, Tabs} from "react-bootstrap";
 import SingleSelect from "../SingleSelect";
 import ClientsCRUDView from "./CRUD/ClientsCRUDView";
 import DevicesCRUDView from "./CRUD/DevicesCRUDView";
-
+import Chat from "../Chat/Chat";
+import ChatGRPC from "../Chat/ChatGRPC"
 
 const AdminViewIndex = (props) => {
 
@@ -18,7 +19,7 @@ const AdminViewIndex = (props) => {
     },[messageForToast])
         const [key, setKey] = useState('clients');
     return (
-
+        <>
         <Tabs
             id="uncontrolled-tab-example"
             activeKey={key}
@@ -34,7 +35,8 @@ const AdminViewIndex = (props) => {
             </Tab>
 
         </Tabs>
-
+        <ChatGRPC/>
+        </>
 
     );
 };

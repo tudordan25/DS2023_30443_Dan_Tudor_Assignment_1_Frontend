@@ -3,7 +3,6 @@ import SingleSelect from "../../SingleSelect";
 import {Button, Col, Form, Row} from "react-bootstrap";
 import validateAccountData from "../../Validators/AccountsFormValidator";
 import {RegisterButton} from "../../LoginForm";
-
 export default function ClientsCRUDView (props) {
 
     const [clients,setClients]=useState([]);
